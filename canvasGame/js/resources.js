@@ -12,7 +12,7 @@
                 _load(url);
             });
         } else {
-            _load(url);
+            _load(urlOfArr);
         }
     }
 
@@ -25,7 +25,7 @@
                 resourceCache[url] = img;
                 if (isReady()) {
                     readyCallbacks.forEach(function (func) {
-                        func()
+                        func();
                     });
                 }
             };
